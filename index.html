@@ -9,14 +9,14 @@
   
   <body>
     <div class = "navigation">
-      <div class="container">
+      <div id="#nav" class="container">
         <ul class= "pull-left">
           <li><a href="#about">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#news">News</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -25,14 +25,87 @@
       <div class="container">
         <h1>Engserv Group Corp</h1>
         <p1>Quality contracting services since 1999</p1>
-      </div>
+      </div><a name = "about"></a>
     </div>
     
-    <div class="about"><a name = "about"></a>
+    <div class="about">
       <div class="container">
         <p class="tab">Here at Engserv Group Corp we have been engaged in quality projects since our very begining. The company was founded with one basic idea: "To provide 100% Customer Satisfaction in every contracting project we're involved in".</p>
         <p class="tab">With 15 years of experience in the contruction industry, an immaculate history of success, and operations in both Puerto Rico and Florida, you can be sure that at Engserv we are dedicated to excel and exceed expectations.</p>
+      </div><a name="gallery"></a>
+    </div>
+    
+    <div class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p1>Not sold on us yet? Here's some of our recent work:</p1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <img src="Red-Bull-Arena-1-RT.jpg">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <img src="46074671.jpg">
+            </div>
+          </div>
+          </div>
+      </div><a name="news"></a>
+    </div>
+      
+    <div class="news">
+      <div class="container">
+        <h2>News</h2>
+        <strong>06/07/2014:</strong><br>
+        <p1>We're currently on track with our project in Ft Lauderdale, FL</p1>
+      </div><a name="contact"></a>
+    </div>
+      
+    <div class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <address>
+              <strong>Puerto Rico Operations</strong><br>
+              P.O. Box 192372<br>
+              San Juan, PR 00919-2372<br>
+              <abbr title="Phone">Phone:</abbr> (787) 787-7211
+            </address>
+          </div>
+          <div class="col-md-6">
+            <address>
+              <strong>Florida Operations</strong><br>
+              5948 SW 42 Terr.<br>
+              Miami, FL 33155<br>
+              <abbr title="Phone">Phone:</abbr> (305) 984-1554
+            </address>
+          </div>
+        </div>
+        <strong>General Info:</strong><br>
+        <a href="mailto:info@engservgroup.com">info@engservgroup.com</a>
       </div>
     </div>
+      
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Website by GJF<br>
+        Email
+        <a href="mailto:gjf93@aol.com">here</a>
+        to report bugs, suggestions or website services.
+        </p>
+      </div>
+    </div>
+      
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+    <script src="jquery.localScroll.js" type="text/javascript"></script> 
+    <script src="jquery.scrollTo.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('.navigation').localScroll({duration:600});
+      });
+    </script>
+      
   </body>    
 </html>
