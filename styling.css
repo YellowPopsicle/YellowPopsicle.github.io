@@ -33,7 +33,7 @@
 .jumbotron{
   background-image: url(Blueprints.jpg);
   height: 400px;
-  width: 100%;
+  /*width: 100%;*/
   min-width: 550px;
 }
 
@@ -59,7 +59,7 @@
   border-bottom: : 1px solid #b4b4b4;
   font-size: 16px;
   font-family: sans-serif;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .tab {
